@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+	<meta charset="UTF-8" />
+	<title>Evidencia final</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+</head>
+
+<body>
+
+	<!--barra-->
+	<header th:fragment="header">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<strong><img src="/images/logo-universidad-tecmilenio.png" height="50px" width="100px"></strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" th:href="@{/index}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" th:href="@{/views/imc/}">Historial</a>
+						</li>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--contenido-->
+		<div class="container"></div>
+
+
+		<!--pie de pag-->
+		<footer th:fragment="footer" class="bg-dark text-center text-white fixed-bottom">
+
+			<div class="container">
+				<p>Ivan Islas G.  Mat:02940519 &copy; -2022</p>
+			</div>
+
+			<scritp type="text/javascript" th:src="@{/js/jquery-3.6.0.min.js}"></scritp>
+			<scritp type="text/javascript" th:src="@{/js/popper.min.js}"></scritp>
+			<scritp type="text/javascript" th:src="@{/js/bootstrap.min.js}"></scritp>
+
+		</footer>
+
+</body>
+
+</html>
